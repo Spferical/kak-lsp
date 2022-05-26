@@ -1,5 +1,14 @@
 ## Unreleased
 
+Additions:
+- Default configuration for Elvish and Clojure.
+- On macOS, the config file is now read from `$XDG_CONFIG_HOME/kak-lsp/kak-lsp.toml`. The old location (`~/Library/Preferences/kak-lsp/kak-lsp.toml`) is used as a fallback (#293).
+- Added shim support for `workspace/WorkspaceFolders`, which fixes interaction with `bash-language-server`.
+- Code lenses are now shown as virtual text via a replace-ranges highlighter (#623).
+
+Fixes:
+- Completions with snippets (as enabled by `snippet_support = true`) now interact properly with Kakoune's completion engine (#616).
+
 ## 12.2.1 - 2022-05-08
 
 Fixes:
